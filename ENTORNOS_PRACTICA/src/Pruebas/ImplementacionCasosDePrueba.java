@@ -89,7 +89,7 @@ public class ImplementacionCasosDePrueba {
 		Personas u1 = new Usuario(615615615);
 		Personas u2 = new Usuario(121212121);
 		
-		c.añadirContacto(u1, u2);
+		c.anadirContacto(u1, u2);
 		
 		assertEquals(1,u1.listaContactos.size());
 		
@@ -103,7 +103,7 @@ public class ImplementacionCasosDePrueba {
 		Personas u1 = new Usuario(615615615);
 		Personas u2 = new Usuario(121212121);
 		
-		c.añadirContacto(u1, u2);
+		c.anadirContacto(u1, u2);
 		c.eliminarContacto(u1, 121212121);
 		
 		assertEquals(0,u1.listaContactos.size());
