@@ -8,9 +8,6 @@ public class Texto extends Mensajes{
 		this.texto=texto;
 	}
 	
-	public Texto(int telRemitente,String texto) {
-		this.texto=texto;
-	}
 
 	public String getTexto() {
 		return texto;

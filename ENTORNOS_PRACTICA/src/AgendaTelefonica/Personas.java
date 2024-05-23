@@ -1,14 +1,12 @@
 package AgendaTelefonica;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 import java.util.Scanner;
 
 public class Personas {
 	Scanner sc = new Scanner(System.in);
 	private int telefono;
 	private String nombre;
-	private String testo;
 	
 	public ArrayList<Personas> listaContactos = new ArrayList<Personas>(); 
 	public ArrayList<Mensajes> listaMensajesEnviados = new ArrayList<Mensajes>(); 
@@ -49,9 +47,6 @@ public class Personas {
 	
 	}
 	
-	public String getTesto() {
-		return testo;
-	}
 
 	public void verMensajesEnviados() {
 		
