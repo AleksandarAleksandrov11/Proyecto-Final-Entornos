@@ -1,17 +1,10 @@
 package AgendaTelefonica;
 
-import java.util.ArrayList;
-import java.util.Scanner;
-
 public class AgendaMain {
 
 	public static void main(String[] args) {
 		
 	Contactos c = new Contactos();
-	Scanner sc = new Scanner(System.in);
-	int respuesta=0;
-	ArrayList<Personas> usuarios = new ArrayList<Personas>();
-	String tipouser="";
 	
 	System.out.println();
 	
@@ -35,6 +28,9 @@ public class AgendaMain {
 	u1.enviarMensajeMultimedia(u1, 222222222, "texto1.txt", 1024);
 	u2.listaMensajesRecibidos.add(u1.listaMensajesEnviados.get(0));
 	u2.listaMensajesRecibidos.add(u1.listaMensajesEnviados.get(1));
+	
+	u2.enviarMensajeTexto(u2, 111111111, "Hola Pepe");
+	u1.listaMensajesRecibidos.add(u2.listaMensajesEnviados.get(0));
 	
 	System.out.println("-----------------------------------------------------------------");
 	
