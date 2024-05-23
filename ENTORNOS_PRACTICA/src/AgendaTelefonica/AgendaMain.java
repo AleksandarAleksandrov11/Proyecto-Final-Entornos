@@ -24,12 +24,12 @@ public class AgendaMain {
 	c.verContactos(u1);
 	System.out.println("-----------------------------------------------------------------");
 	
-	u1.enviarMensajeTexto(u1, 222222222, "¿Hola que tal?");
+	u1.enviarMensajeTexto(u1, 222222222, "¿Hola, que tal?");
 	u1.enviarMensajeMultimedia(u1, 222222222, "texto1.txt", 1024);
 	u2.listaMensajesRecibidos.add(u1.listaMensajesEnviados.get(0));
 	u2.listaMensajesRecibidos.add(u1.listaMensajesEnviados.get(1));
 	
-	u2.enviarMensajeTexto(u2, 111111111, "Hola Pepe");
+	u2.enviarMensajeTexto(u2, 111111111, "Hola Pepe, ¿que tal?");
 	u1.listaMensajesRecibidos.add(u2.listaMensajesEnviados.get(0));
 	
 	System.out.println("-----------------------------------------------------------------");
